@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header .logo-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        header nav a.active {
+            color: #ffcc00;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .faq {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+
+        .faq-question {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #bbdefb;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            border-left: 4px solid #0044cc;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer ul li {
+            display: inline;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: #ffcc00;
+        }
+
+        footer .social-media {
+            margin-top: 10px;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-media a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="EduPlatform Logo">
+            <span class="logo-name">EduPlatform</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses-details.html">Courses</a>
+            <a href="resources.html">Resources</a>
+            <a href="instructor.html">Instructors</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html" class="active">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <div class="faq-question">What is EduPlatform?</div>
+            <div class="faq-answer">EduPlatform is an online learning platform offering a wide variety of courses to help you master new skills.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">How do I enroll in a course?</div>
+            <div class="faq-answer">You can enroll by visiting the course page and clicking the "Enroll Now" button. Follow the instructions to complete your registration.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">What payment methods are accepted?</div>
+            <div class="faq-answer">We accept major credit cards, PayPal, and bank transfers. Check the payment page for more details.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">Can I get a refund?</div>
+            <div class="faq-answer">Yes, you can request a refund within 14 days of purchase if you have not accessed more than 25% of the course content.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">Are the courses self-paced?</div>
+            <div class="faq-answer">Yes, all courses are self-paced, allowing you to learn at your convenience.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">Do I get a certificate after completing a course?</div>
+            <div class="faq-answer">Yes, you will receive a certificate of completion after successfully finishing a course.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">Can I access courses on mobile devices?</div>
+            <div class="faq-answer">Yes, our platform is fully responsive and accessible on mobile, tablet, and desktop devices.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">Are there any free courses available?</div>
+            <div class="faq-answer">Yes, we offer a selection of free courses. Visit the "Free Courses" section for more details.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">What kind of support is available?</div>
+            <div class="faq-answer">We provide 24/7 email support and a comprehensive help center to assist you with any issues.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">How can I contact an instructor?</div>
+            <div class="faq-answer">You can contact instructors through the course discussion boards or by messaging them directly via the platform.</div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 EduPlatform. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://facebook.com/eduplatform" target="_blank">Facebook</a>
+            <a href="https://twitter.com/eduplatform" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/company/eduplatform" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
